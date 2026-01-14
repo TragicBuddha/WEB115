@@ -1,2 +1,2 @@
-# CSC121
-Contains all projects from CSC121
+# WEB115
+Contains all projects from WEB115
