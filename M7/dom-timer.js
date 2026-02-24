@@ -34,8 +34,9 @@ stopTimerButton.addEventListener("click", function() {
 
 
 // Create an event listener for the reset button
-// This will reset our time interval every time we press it
+// This will reset and stop our time interval every time we press it
 resetTimerButton.addEventListener("click", function() {
+    clearInterval(timerId);
     timerId = null;
     currentTime = 0;
     updateDisplay();
