@@ -39,24 +39,29 @@ h1.className = "highlight";
 let highlightElements = document.querySelectorAll("h1.highlight");
 
 // Step 4g: Add an event listener to the button that adds a new list item to the unordered list when clicked
-let listItemNumber = 0;
+let listItemNumber = 3;
 
 let button = document.querySelector("button");
 button.addEventListener("click", function() {
     let newLi = document.createElement("li");
-    newLi.textContent = "New List Item ${listItemNumber + 1}";
+    newLi.textContent = `New List Item ${listItemNumber + 1}`;
     newLi.style.color = colorRandomizer();
     ul.appendChild(newLi);
 });
 
+myDiv.addEventListener("click", function() {
+    myDiv.style.backgroundColor = colorRandomizer();
+});
+
+
 // Function to generate random color
+let colorIndex = 0;
 function colorRandomizer() {
     let r = "red";
     let g = "green";
     let b = "blue";
     letters = [r, g, b];
-    let letChoice = letters[//Need a way to randomly select index of letters];
-    return letChoice;  
+    let chosenColor = letters[Math.random];
 }
 // Step 4g: Add an event listener to the button that adds a new list item to the unordered list when clicked
 
