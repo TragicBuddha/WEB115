@@ -55,7 +55,7 @@ button.addEventListener("click", function() {
     newItemNumber++;
 });
 
-// Step i: add an event listener to the myDiv element 
+// Step I: add an event listener to the myDiv element 
 // that changes the background color to a random color when the user clicks on the myDiv element.
 myDiv.addEventListener("click", function() {
     myDiv.style.backgroundColor = colorRandomizer();
@@ -70,6 +70,7 @@ function colorRandomizer() {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
+// Function allowing number 0 - 255 in randomizer
 function randomInteger(max) {
     return Math.floor(Math.random()*(max + 1));
 }
